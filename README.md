@@ -1,2 +1,4 @@
 # payTerminal
-Vue,js project
+Vue.js project
+
+
