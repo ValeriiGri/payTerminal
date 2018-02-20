@@ -7,13 +7,9 @@ export default new Router({
 	mode:'history',
 	routes: [
 		{
-		  path: '/',
-		  name: 'home'
-		},
-		{
 		  path: '/:id',
 		  name: 'megafon',
-		  component: () => import ('./pages/Megafon.vue')
+		  component: () => import ('./pages/operatorPage.vue')
 		}
 	]
 })
