@@ -1,6 +1,6 @@
 <template>
 	<div>
-    	<operator v-bind:operatorExpected="operator"></operator>
+    	<operator v-bind:operatorExpected="operator"></operator> 
     </div>
 </template>
 

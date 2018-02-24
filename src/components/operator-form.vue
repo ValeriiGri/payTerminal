@@ -8,7 +8,10 @@
       <div class="form-group">
         <label>Сумма</label>
         <input type="number" class="form-control" v-model="operatorExpected.sum">
-      </div> 
+      </div>
+      <button type="button" class="btn btn-success">
+          Pay
+      </button>
       <pre>{{operatorExpected}}</pre>
   </div>
 </template>
