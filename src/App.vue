@@ -22,6 +22,12 @@
   padding: 30px;
 }
 
+#app>div:last-child{
+    width:50%;
+    text-align: center;
+    margin: 0 25%;
+}
+
 #nav a {
   font-weight: bold;
   color: #2c3e50;
