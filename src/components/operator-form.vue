@@ -9,9 +9,10 @@
         <label>Сумма</label>
         <input type="number" class="form-control" v-model="operatorExpected.sum">
       </div>
-      <button type="button" class="btn btn-success">
+      <button type="button" class="btn btn-success" @click = "pay">
           Pay
       </button>
+      <span>{{response}}</span>
       <pre>{{operatorExpected}}</pre>
   </div>
 </template>
@@ -24,6 +25,22 @@
         type:Object,
         required:true
       }
+    },
+    data: function(){
+      return{
+        url:'http://localhost:3000/payments',
+        response:null
+      }
+    },
+    methods:{
+    pay: function(){
+          let xhr = new XMLHttpRequest();
+
+          xhr.open("POST", this.url, true);
+          xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+          xhr.send(JSON.stringify(this.operatorExpected));
+          this.$router.push('/success')
+        }
     }
   }
 </script>
