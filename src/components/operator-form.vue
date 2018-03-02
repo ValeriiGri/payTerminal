@@ -38,9 +38,9 @@
           let self = this;
             xhr.addEventListener('readystatechange',function(){
               if(xhr.status != 200){
-                return;
+                self.response = "Error";
               }
-              self.response = "Success";
+              self.response = "Data was uploaded successfully";
             });
 
           xhr.open("POST", this.url, true);
