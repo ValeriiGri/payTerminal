@@ -35,13 +35,13 @@
     methods:{
     pay: function(){
           let xhr = new XMLHttpRequest();
-          // let self = this;
-          //   xhr.addEventListener('readystatechange',function(){
-          //     if(xhr.status != 200){
-          //       return;
-          //     }
-          //     self.response = "Success";
-          //   });
+          let self = this;
+            xhr.addEventListener('readystatechange',function(){
+              if(xhr.status != 200){
+                return;
+              }
+              self.response = "Success";
+            });
 
           xhr.open("POST", this.url, true);
           xhr.setRequestHeader('Content-type','application/json; charset=utf-8');

@@ -1,0 +1,28 @@
+{
+  "payments":[
+    {
+      "title": "MTS",
+      "number": "911 1234567",
+      "sum": "150",
+      "id": 1
+    },
+    {
+      "title": "Beeline",
+      "number": "905 1234567",
+      "sum": "100",
+      "id": 2
+    },
+    {
+      "title": "Megafon",
+      "number": "921 1234568",
+      "sum": "120",
+      "id": 3
+    },
+    {
+      "title": "Beeline",
+      "number": "965 123454657",
+      "sum": "180",
+      "id": 4
+    }
+  ]
+}
